@@ -1,19 +1,21 @@
 package Homeworks;
 
-public class Homework2 {
-    public void fractionalMAX() {
-        double fractional = 10.32;
+public class Homework2_1 {
+    public void fractional() {
+        double fractional;
+        fractional = 10.3247;
         System.out.println("Переменная типа с плавающей точкой с наибольшим диапазоном чисел. Произвольное значение = " + fractional);
     }
 
     public void integer() {
-        byte integer = 127;
+        byte integer;
+        integer = 127;
         System.out.println("Переменная целочисленного типа с наименьшим диапазоном чисел. Максимальное значение = " + integer);
     }
 
-    public static void main(String args[]) {
-        Homework2 test = new Homework2();
-        test.fractionalMAX();
+    public static void main(String[] args) {
+        Homework2_1 test = new Homework2_1();
+        test.fractional();
         test.integer();
     }
 }
