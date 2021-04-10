@@ -15,6 +15,8 @@ public class Homework5 {
         System.out.println("Какую выполнить операцию?: +, -, *, /");
         Scanner scanner2 = new Scanner(System.in);
         String arif1 = scanner2.nextLine();
+        //смотри, эту задачу можно реализовать через оператор switch-case
+        //попробуй так сделать, но по работе программы - все ок
         if (arif1.equals("+")) {
             System.out.println(operation1);
         }
