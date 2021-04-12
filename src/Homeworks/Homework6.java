@@ -38,6 +38,8 @@ public class Homework6 {
                 System. exit(0);
             }
             System.out.println("Введите число:");
+            //Здесь можно реализовать через switc-case, также, как ты сделал это в 5 задании.
+            //Switch-case лучше сделай для единиц измерения, а для выбора массы или расстояния оставь if-else
             if (unit2.equals("1")) {
                 Scanner scanner4 = new Scanner(System.in);
                 double x = scanner4.nextDouble();
@@ -46,6 +48,7 @@ public class Homework6 {
                 double centner = x / 100000;
                 double tonna = x / 1000000;
                 if (x >= 0) {
+                    //Вынеси операторы вывода в конце всех условий
                     System.out.println("Результат:");
                     System.out.println("Граммы:" + gramm);
                     System.out.println("Килограммы:" + kilogramm);
