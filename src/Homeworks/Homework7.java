@@ -10,9 +10,13 @@ public class Homework7 {
         Scanner size = new Scanner(System.in);
         System.out.println("Выберите размер массива: ");
         int arraysize = size.nextInt();
+        //Смотри, по условию у нас нет ограничения на тип введенных данных
+        //(это может быть вещественное число или просто какая-то строка)
+        //попробуй адаптировать программу под ввод любых данных
         int array[] = new int[arraysize];
         System.out.println("Введите элементы массива: ");
         for (int i = 0; i < arraysize; i++) {
+            //тут тоже нужно будет поменять метод у сканера
             array[i] = size.nextInt();
         }
         System.out.println("Введенный массив: ");
