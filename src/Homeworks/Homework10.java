@@ -13,6 +13,8 @@ public class Homework10 {
         System.out.println("Введите элементы матрицы:");
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
+                //Смотри, у нас по условию не написано, что только int значения могут быть в
+                //матрице
                 matrixA[i][j] = in.nextInt();
             }
         }
