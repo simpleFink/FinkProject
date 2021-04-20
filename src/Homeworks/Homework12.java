@@ -10,7 +10,7 @@ public class Homework12 {
         boolean got = str.contains("Java");
         boolean start = str.startsWith("I like");
         boolean end = str.endsWith("!!!");
-        if (got == start == end) {
+        if (got & start & end) {
             System.out.println("Результат 1:\n" + str.toUpperCase());
         }
         String result = str.replaceAll("a","o");
