@@ -15,7 +15,7 @@ public class Homework13_2 {
         //1. Переводишь строку в массив слов с помощью String.split(" ") - это метод возвращает строку из символов
         //между которыми стоят пробел или пробелы
         //2. Берешь каждый элемент массива и проверяешь, что он состоит только из символов латинского алфавита (с помощью регулярки)
-        String result = str.replaceAll("(\\w+[0-9]+\\w+|\\w+[0-9]+\\w+\\w*[!@#$%^&*()№;{}/`~]+\\w+|\\w+[!@#$%^&*()№;{}/`~]+\\w+)", " ");
+        String result = str.replaceAll("(\\w*[0-9]+\\w*|\\w+[0-9]*\\w*\\w*[!@#$%^&*()№;{}/`~]+\\w*|\\w+[!@#$%^&*()№;{}/`~]*\\w+)", " ");
         String result2 = result.replaceAll("[^a-z A-Z]", " ");
         int words = new java.util.StringTokenizer(result2," ").countTokens();
         System.out.println(result2);
